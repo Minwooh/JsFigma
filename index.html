@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    #container {
+      max-width: 1280px;
+      margin: 0px auto;
+      text-align: center;
+      min-height: 100vh;
+      background: #902443;
+      position: relative;
+    }
+    #whiteBox {
+      position: relative;
+      width: 80%;
+      height: 85vh;
+      top: 30px;
+      background: #ffffff;
+      box-shadow: 0px 0px 4px 2px rgba(100, 100, 100, 0.25);
+      border-radius: 5px;
+      margin: 0 auto;
+    }
+
+    #logoImg {
+      position: relative;
+      left: 43%;
+      top: 6%;
+      width: 100px;
+      height: 100px;
+      filter: drop-shadow(0px 6px 5px #7a7a7a);
+    }
+
+    #title {
+    position: relative;
+    top: 14%;
+
+      font-family: "Pretendard";
+      font-style: normal;
+      font-weight: 999;
+      font-size: 25px;
+      line-height: 24px;
+      
+      color: #5e162b;
+    }
+  
+    #lineN {
+      position: absolute;
+      width: 19px;
+      height: 0px;
+      left: 366px;
+      top: 360px;
+
+      border: 5px solid #dc7190;
+      transform: rotate(90deg);
+    }
+
+    #textname {
+      position: absolute;
+      width: 50px;
+      height: 26px;
+      left: 389px;
+      top: 355px;
+
+      font-family: "SUIT";
+      font-style: normal;
+      font-weight: 550;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+
+      color: #000000;
+    }
+    #name {
+      position: absolute;
+      width: 280px;
+      height: 35px;
+      left: 363px;
+      top: 394px;
+
+      border : none;
+      background: #cd99a6;
+      border-radius: 50px;
+    }
+
+    #lineP {
+      position: absolute;
+      width: 19px;
+      height: 0px;
+      left: 367px;
+      top: 458px;
+
+      border: 5px solid #dc7190;
+      transform: rotate(90deg);
+    }
+    #textphone {
+      position: absolute;
+      width: 80px;
+      height: 26px;
+      left: 395px;
+      top: 450px;
+
+      font-family: "SUIT";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+
+      color: #000000;
+    }
+    #tel {
+      position: absolute;
+      width: 280px;
+      height: 35px;
+      left: 365px;
+      top: 490px;
+
+      border : none;
+      background: #cd99a6;
+      border-radius: 50px;
+    }
+
+   
+    #btn {
+      position: relative;
+      margin-top : 510px;
+      margin-left : 0px;
+      width: 100px;
+      height: 40px;
+
+      /* left: 73px;
+      top: 543px; */
+      border : none;
+    background: #902443;
+    border-radius: 9px;
+
+      font-family: "SUIT";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 10px;
+      text-align: center;
+
+      color: #ffffff;
+    }
+    #underLogo {
+      position: relative;
+      width: 248px;
+      height: 29px;
+      
+      top: 80px;
+
+      font-family: "Pretendard";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+  </style>
+
+  <body>
+    <div id="container">
+      <div id="whiteBox">
+        <div id="logoImg">
+          <img src="/images/ddwu_logo 5.png" alt="동덕멋사로고 이미지" />
+        </div>
+
+        <span id="title"
+          >동덕여자대학교 멋쟁이사자처럼<br />
+          11기 아기사자 합격자 발표</span
+        >
+
+        <div id="inputDiv">
+          <span id="lineN"></span>
+          <span id="textname">성함</span>
+          <input type="text" id="name" />
+        </div>
+        <div id="inputDiv">
+          <div id="lineP"></div>
+          <span id="textphone">전화번호</span>
+          <input type="tel" id="tel" placeholder="(ex)010-1234-5678" />
+        </div id = "coverBtn">
+        <button type="submit" id="btn" >입력</button>
+        <div>
+          <span id="underLogo"> DONGDUK x LIKELION</span>
+        </div>
+      </div>
+    </div>
+
+    <script src = "/js/check.js"></script>
+  </body>
+</html>
